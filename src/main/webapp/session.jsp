@@ -22,7 +22,7 @@
              DataSource ds = (DataSource)application.getAttribute("cp");
              Connection conn  =ds.getConnection();
              Statement stmt=conn.createStatement();
-             ResultSet rs=stmt.executeQuery("Select * from login");
+             ResultSet rs=stmt.executeQuery("Select * from LOGIN");
              while(rs.next()){
                  out.println(rs.getString("ID")+"<br/>");
              }

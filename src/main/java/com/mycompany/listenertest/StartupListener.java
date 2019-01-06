@@ -28,9 +28,9 @@ public class StartupListener implements ServletContextListener {
             sce.getServletContext().log("test init");
             ComboPooledDataSource cp= new ComboPooledDataSource();
             cp.setDriverClass("com.mysql.jdbc.Driver");
-            cp.setJdbcUrl("jdbc:mysql://localhost/test");
-            cp.setUser("root");
-            cp.setPassword("");
+            cp.setJdbcUrl("jdbc:mysql://imsofa.rocks/login");
+            cp.setUser("imsofa");
+            cp.setPassword("imsofarocks");
             cp.setMaxPoolSize(10);
             cp.setMinPoolSize(3); //確保同時連線資料庫數量
             cp.setMaxIdleTime(30); //連線時間，時間到自動斷掉連線
